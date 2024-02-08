@@ -1,0 +1,471 @@
+:root{
+  --color-vert:rgb(13, 150, 20);
+  --color-grey:grey;
+  --color-noir:black;
+  --color-blanc:white;
+  --color-pol:rgb(221, 221, 221);
+  --color-nav:rgb(3, 33, 53);
+}
+.list_nav{
+  margin-left:19em ;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+.navbar{
+  background-color:var(--color-nav) ;
+  color: var(--color-blanc);
+  height: 4.3em;
+ 
+}
+.dec{
+  color:rgb(121, 121, 121);
+  text-decoration:none;
+}
+.dec:hover{
+  color: white;
+} 
+.logo{
+  position: absolute;
+  top:0;
+  left: 40px;
+}
+.logo img{
+  height: 5em;
+ 
+}
+.petit_logo{
+  color:var(--color-pol) ;
+  font-size: 12px;
+  font-weight: bold;
+}
+.art{
+  background-color: rgba(3, 33, 53, 0.836);
+  color: var(--color-blanc);
+}
+
+.boite{
+  background-image: url(../sary/regime-fiscal-madagascar.jpg);
+  background-repeat: no-repeat;
+  background-position: 150px 0px;
+  background-color: rgb(226, 226, 226);
+  position: fixed;
+  top: 4em;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.boit{
+  background-image: url(../sary/mesures-fiscales-covid19-madagascar.jpg);
+  
+  background-color: rgb(226, 226, 226);
+  position: fixed;
+  top: 4em;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.placedefaut{
+  position: absolute;
+  z-index: 3;
+  top: 9.4%;
+  left: 20%;
+  transition: 10s;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-left: 25%; /* 15% from the top and centered */
+  margin-top: 10%; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  
+}
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  margin-left: 95%;
+  padding: 3px 7px;
+  text-align: center
+  
+}
+.close:hover{
+  background-color: rgb(155, 21, 21);
+  color: white;
+  cursor: pointer
+}
+
+/* Add Zoom Animation */
+.modal-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+
+.detail {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* detail Content/Box */
+.detail-content {
+  background-color: #fefefe;
+  margin-left: 20%; /* 15% from the top and centered */
+  margin-top: 3%; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  
+}
+/* The Close Button */
+.close2 {
+  /* Position it in the top right corner outside of the modal */
+  margin-left: 95%;
+  padding: 3px 7px;
+  text-align: center
+  
+}
+.close2:hover{
+  background-color: rgb(155, 21, 21);
+  color: white;
+  cursor: pointer
+}
+
+/* Add Zoom Animation */
+.detail-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+
+.total {
+
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* detail Content/Box */
+.total-content {
+  background-color: #fefefe;
+  margin-left: 20%; /* 15% from the top and centered */
+  margin-top: 1%; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  
+}
+/* The Close Button */
+.close3 {
+  /* Position it in the top right corner outside of the modal */
+  margin-left: 95%;
+  padding: 3px 7px;
+  text-align: center
+  
+}
+.close3:hover{
+  background-color: rgb(155, 21, 21);
+  color: rgb(255, 255, 255);
+  cursor: pointer
+}
+.close3 a:hover{
+  color: rgb(255, 255, 255);
+}
+
+/* Add Zoom Animation */
+.total-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* affichage du tronc commun */
+.situation {
+
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* detail Content/Box */
+.situation-content {
+  background-color: #fefefe;
+  margin-left: 6%; /* 15% from the top and centered */
+  margin-top: 3%; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  
+}
+
+
+/* Add Zoom Animation 
+.situation-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}*/
+
+
+.avaka1{
+  padding: 1em;
+  color: rgb(148, 101, 14);
+  font-size: 11px ;
+  font-weight: bold
+}
+.avaka2{
+  padding: 1em;
+  color: rgb(65, 65, 65);
+  font-size: 11px
+}
+
+
+
+
+
+
+.propos {
+ 
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.856); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.propos-content {
+  background-color: #fefefe;
+  margin-left: 25%; /* 15% from the top and centered */
+  margin-top: 10%; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  
+}
+/* The Close Button */
+.close_propos {
+  /* Position it in the top right corner outside of the modal */
+  margin-left: 95%;
+  padding: 3px 7px;
+  text-align: center
+  
+}
+.close_propos:hover{
+  background-color: rgb(155, 21, 21);
+  color: white;
+  cursor: pointer
+}
+
+/* Add Zoom Animation */
+.propos-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+ 
+   
+.info {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* detail Content/Box */
+.info-content {
+  background-color: #1c1c1c;
+  margin-left: 20%; /* 15% from the top and centered */
+  margin-top: 8%; /* 15% from the top and centered */
+  border-radius: 10px;
+  width: 60%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  color: white;
+  
+}
+/* The Close Button */
+.close_r {
+  /* Position it in the top right corner outside of the modal */
+  margin-left: 95%;
+  padding: 3px 7px;
+  text-align: center
+  
+}
+.close_r:hover{
+  background-color: rgb(155, 21, 21);
+  color: white;
+  cursor: pointer
+}
+
+/* Add Zoom Animation */
+.info-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+   
+.ms {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* detail Content/Box */
+.ms-content {
+  background-color: #1c1c1c;
+  margin-left: 30%; /* 15% from the top and centered */
+  margin-top: 14%; /* 15% from the top and centered */
+  border-radius: 5px;
+  width: 40%; /* Could be more or less, depending on screen size */
+  padding: 1em;
+  color: white;
+  
+}
+/* The Close Button */
+.close_r {
+  /* Position it in the top right corner outside of the modal */
+  margin-left: 95%;
+  padding: 3px 7px;
+  text-align: center
+  
+}
+.close_r:hover{
+  background-color: rgb(155, 21, 21);
+  color: white;
+  cursor: pointer
+}
+
+/* Add Zoom Animation */
+.ms-content {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
